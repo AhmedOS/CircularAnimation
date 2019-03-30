@@ -141,6 +141,7 @@ class CircularAnimation {
     
     struct TimingFunction {
         // https://gist.github.com/naoyashiga/2673e55a9b5212fd0897
+        // Visualization: https://easings.net/en
         static func easeOutQuint() -> CAMediaTimingFunction {
             return CAMediaTimingFunction(controlPoints: 0.23, 1, 0.32, 1)
         }
