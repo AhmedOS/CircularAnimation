@@ -1,5 +1,33 @@
 # ⭕ Circular Animation
 ![](https://media.giphy.com/media/1UX5ssfrxGqoMClh3C/giphy.gif)
+
+## Properties:
+- **`views`**: Array of views to be animated.
+- **`radius`**: Virtual circle radius, which views will animate around its center.
+- **`origin`**: Virtual circle center.
+- **`sourceAngle`**: Angle which views start animating from, measured in **degrees**.
+  - Valid value must lay in range **[0, 360]**.
+- **`startAngle`**: The beginning angle which views distribute themselves starting from it, measured in **degrees**.
+  - Valid value must lay in range **[0, 360]**.
+- **`degrees`**: Amount of degrees used to distribute views within them starting from `startAngle`.
+  - Valid value must lay in range **[-360, 360]**.
+  - Positive value will result in a **clockwise** animation.
+  - Negative value will result in a **counter-clockwise** animation.
+- **`fullCircle`**: Indicates whether the final shape is meant to be a full circle or not.
+  - Generally, mark it as `true` if both first and last views overlap on each other.
+- **`duration`**: Duration of animation for each view in **seconds**.
+- **`delay`**: The delay between animating views in **seconds**.
+- **`timingFunction`**: A timing function defining the pacing of the animation.
+  - Default value is `CircularAnimation.TimingFunction.easeOutQuint()`.
+- **`animatingOrder`**: The order which views will be animated in.
+  - Default value is `CircularAnimation.AnimatingOrder.default`.
+
+## Methods:
+- **`animate`**: This method starts the animation, and it accepts two parameters:
+  - `mode: CircularAnimation.Mode`: Indicates the animation mode.
+  - `options: CircularAnimation.Options?`: Provide this parameter to override the current animation properties with
+  the provided ones in `options` object. Its default value is `nil`.
+
 ## Usage Example:
 ```swift
 let animation = CircularAnimation()
