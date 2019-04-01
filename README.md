@@ -16,6 +16,7 @@ animation.delay = 0.1
 animation.sourceAngle = 240
 animation.startAngle = 60
 animation.degrees = -130
+animation.animatingOrder = .reversed
 
 // Uncomment code blocks to test different variations
 
@@ -36,5 +37,5 @@ animation.fullCircle = true
 animation.timingFunction = CircularAnimation.TimingFunction.easeOutExpo()
 */
 
-animation.animate()
+animation.animate(mode: .enter)
 ```
