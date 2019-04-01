@@ -21,12 +21,19 @@
   - Default value is `CircularAnimation.TimingFunction.easeOutQuint()`.
 - **`animatingOrder`**: The order which views will be animated in.
   - Default value is `CircularAnimation.AnimatingOrder.default`.
+  - Using `.reversed` order will result in animating the last view in `views` array first,
+  then the view which precedes it, and so on. Alternating between `.default` and `.reversed` will change only
+  the order of animations execution, not their locations on screen.
 
 ## Methods:
 - **`animate`**: This method starts the animation, and it accepts two parameters:
   - `mode: CircularAnimation.Mode`: Indicates the animation mode.
-  - `options: CircularAnimation.Options?`: Provide this parameter to override the current animation properties with
-  the provided ones in `options` object. Its default value is `nil`.
+    - `.enter` mode will animate the views starting from the source location to their final locations.
+    - `.exit` mode will animate the views back to the source location.
+    - `.exit` mode **doesn't** rely on `.enter` mode to be executed first.
+  - `options: CircularAnimation.Options?`: Provide this parameter to override temporarily
+  the current animation properties with the provided ones in `options` object.
+  Its default value is `nil`.
 
 ## Usage Example:
 ```swift
