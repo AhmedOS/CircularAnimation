@@ -1,5 +1,5 @@
 # ⭕ Circular Animation
-![](https://media.giphy.com/media/1UX5ssfrxGqoMClh3C/giphy.gif)
+![](https://media.giphy.com/media/7NOuHho49iyuVcxoDb/giphy.gif)
 
 ## Properties:
 - **`views`**: Array of views to be animated.
