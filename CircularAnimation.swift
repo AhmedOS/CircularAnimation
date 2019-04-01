@@ -29,7 +29,7 @@ class CircularAnimation {
     
     /// Amount of degrees used to distribute views within them starting from `startAngle`.
     /// Valid value must lay in range **[-360, 360]**.
-    /// * Positive value will result in a clockwise animation,
+    /// * Positive value will result in a clockwise animation.
     /// * Negative value will result in a counter-clockwise animation.
     var degrees: Float = 0
     
