@@ -22,7 +22,8 @@
 - **`animatingOrder`**: The order which views will be animated in.
   - Default value is `CircularAnimation.AnimatingOrder.default`.
   - Using `.reversed` order will result in animating the last view in `views` array first,
-  then the view which precedes it, and so on. Alternating between `.default` and `.reversed` will change only
+  then the view which precedes it, and so on.
+  - Alternating between `.default` and `.reversed` will change only
   the order of animations execution, not their locations on screen.
 
 ## Methods:
