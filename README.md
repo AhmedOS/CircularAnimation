@@ -1,4 +1,9 @@
 # ⭕ Circular Animation
+
+| ![](https://cdn.dribbble.com/users/133545/screenshots/1212896/weather-rebound.gif) |
+|:--:| 
+| *Inspiration: [Weather Rebound by Chris Slowik](https://dribbble.com/shots/1212896-Weather-Rebound-gif)* |
+
 ![](https://media.giphy.com/media/7NOuHho49iyuVcxoDb/giphy.gif)
 
 ## Usage Example:
